@@ -53,8 +53,10 @@ const InputForm = () => {
   });
 
   useEffect(() => {
-    formik.resetForm();
-  }, [isFocused]);
+    if (isFocused) {
+      formik.resetForm();
+    }
+  }, [isFocused, formik]);
 
   const onChange = (target: string, value: string) => {
     formik.setFieldValue(target, value);

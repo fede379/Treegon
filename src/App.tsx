@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {useColorMode, SunIcon, MoonIcon, IconButton} from 'native-base';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
